@@ -56,11 +56,11 @@ pub struct MerklePath<
 > where
     MerkleChip: MerkleInstructions<C, PATH_LENGTH, K, MAX_WORDS> + Clone,
 {
-    chips: [MerkleChip; PAR],
-    domain: MerkleChip::HashDomains,
-    leaf_pos: Value<u32>,
+    pub chips: [MerkleChip; PAR],
+    pub domain: MerkleChip::HashDomains,
+    pub leaf_pos: Value<u32>,
     // The Merkle path is ordered from leaves to root.
-    path: Value<[C::Base; PATH_LENGTH]>,
+    pub path: Value<[C::Base; PATH_LENGTH]>,
 }
 
 impl<

@@ -36,8 +36,8 @@ where
 {
     advices: [Column<Advice>; 5],
     q_decompose: Selector,
-    pub(super) cond_swap_config: CondSwapConfig,
-    pub(super) sinsemilla_config: SinsemillaConfig<Hash, Commit, Fixed>,
+    pub cond_swap_config: CondSwapConfig,
+    pub sinsemilla_config: SinsemillaConfig<Hash, Commit, Fixed>,
 }
 
 /// Chip implementing `MerkleInstructions`.
